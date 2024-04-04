@@ -1,3 +1,5 @@
+:show-content:
+
 =====
 Lunch
 =====
@@ -93,6 +95,8 @@ Vendor information
    :align: center
    :alt: The top portion of the vendor form filled out.
 
+.. _lunch/availability:
+
 Availability
 ------------
 
@@ -130,6 +134,8 @@ Orders
    :align: center
    :alt: The orders section of a vendor form, with all fields filled out.
 
+.. _lunch/extras:
+
 Extras
 ------
 
@@ -145,6 +151,8 @@ default, the first type or *category* of add-ons is labeled `Extras`, the second
    When configuring the extras, it is important to keep in mind that all the extras configured will
    appear for **every item** offered by the vendor. That means that only items which apply to
    **all** products from the vendor should be added.
+
+.. _lunch/configure-extras:
 
 Configure extras
 ~~~~~~~~~~~~~~~~
@@ -308,3 +316,11 @@ lunch alert form loads. Enter the following information on the form:
    :align: center
    :alt: An alert form with al the information filled out for a chat alert sent at 10:30 AM, asking
          employees to submit orders by 11:30 AM.
+
+.. seealso::
+   - :doc:`lunch/orders`
+
+.. toctree::
+   :titlesonly:
+
+   lunch/orders
