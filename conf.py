@@ -133,6 +133,17 @@ else:
         )
         odoo_dir_in_path = True
 
+if odoo_dir_in_path:
+    upgrade_util_dir = next(filter(Path.exists, [Path('upgrade-util'), Path('../upgrade-util')]), None)
+    if not upgrade_util_dir:
+        _logger.warning(
+            "Could not find Upgrade Utils sources directory in `upgrade_util`.\n"
+            "In order to fully build the 'Developer' documentation, clone the repository with "
+            "`git clone https://github.com/odoo/upgrade-util` or create a symbolic link."
+        )
+    from odoo import upgrade
+    upgrade.__path__.append(str((upgrade_util_dir / 'src').resolve()))
+
 # Mapping between odoo models related to master data and the declaration of the
 # data. This is used to point users to available xml_ids when giving values for
 # a field with the autodoc_field extension.
