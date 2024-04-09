@@ -71,75 +71,42 @@ Modules
 -------
 
 .. automodule:: odoo.upgrade.util.modules
-.. autofunction:: modules_installed
-.. autofunction:: module_installed
-.. autofunction:: uninstall_module
-.. autofunction:: uninstall_theme
-.. autofunction:: remove_module
-.. autofunction:: remove_theme
-.. autofunction:: rename_module
-.. autofunction:: merge_module
-.. autofunction:: force_install_module
-.. autofunction:: force_upgrade_of_fresh_module
-.. autofunction:: move_model
-
+   :members:
 
 Models
 ------
 
 .. automodule:: odoo.upgrade.util.models
-.. autofunction:: remove_model
-.. autofunction:: rename_model
-.. autofunction:: merge_model
-
+   :members:
 
 Fields
 ------
 
 .. automodule:: odoo.upgrade.util.fields
-.. autofunction:: remove_field
-.. autofunction:: rename_field
-.. autofunction:: move_field_to_module
-.. autofunction:: change_field_selection_values
+   :members: remove_field,rename_field,move_field_to_module,change_field_selection_values
 
 
 Records
 -------
 
 .. automodule:: odoo.upgrade.util.records
-.. autofunction:: ref
-.. autofunction:: remove_record
-.. autofunction:: rename_xmlid
-.. autofunction:: ensure_xmlid_match_record
-.. autofunction:: update_record_from_xml
-.. autofunction:: force_noupdate
-.. autofunction:: replace_record_references_batch
-.. autofunction:: replace_in_all_jsonb_values
-
+   :members: ref,remove_record,rename_xmlid,ensure_xmlid_match_record,update_record_from_xml,
+      force_noupdate,replace_record_references_batch,replace_in_all_jsonb_values
 
 ORM
 ---
 
 .. automodule:: odoo.upgrade.util.orm
-.. autofunction:: env
-.. autofunction:: recompute_fields
-.. autoclass:: iter_browse
-   :members: create
+   :members: env,recompute_fields,iter_browse
 
 .. automodule:: odoo.upgrade.util.domains
-.. autofunction:: adapt_domains
-
+   :members:
 
 SQL
 ---
 
 .. automodule:: odoo.upgrade.util.pg
-.. autofunction:: explode_execute
-.. autofunction:: format_query
-.. autofunction:: get_columns
-.. autoclass:: ColumnList
-   :members: using, iter_unquoted
-.. autoclass:: PGRegexp
+   :members: explode_execute,format_query,get_columns,ColumnList,PGRegexp
 
 
 Misc

@@ -268,6 +268,9 @@ redirects_dir = 'redirects/'
 sphinx_tabs_disable_tab_closing = True
 sphinx_tabs_disable_css_loading = True
 
+# Autodoc ordering
+autodoc_member_order = 'bysource'
+
 #=== Options for HTML output ===#
 
 html_theme = 'odoo_theme'
