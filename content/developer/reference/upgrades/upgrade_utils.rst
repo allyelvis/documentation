@@ -83,21 +83,19 @@ Fields
 ------
 
 .. automodule:: odoo.upgrade.util.fields
-   :members: remove_field,rename_field,move_field_to_module,change_field_selection_values
-
+   :members:
 
 Records
 -------
 
 .. automodule:: odoo.upgrade.util.records
-   :members: ref,remove_record,rename_xmlid,ensure_xmlid_match_record,update_record_from_xml,
-      force_noupdate,replace_record_references_batch,replace_in_all_jsonb_values
+   :members: 
 
 ORM
 ---
 
 .. automodule:: odoo.upgrade.util.orm
-   :members: env,recompute_fields,iter_browse
+   :members:
 
 .. automodule:: odoo.upgrade.util.domains
    :members:
@@ -106,15 +104,10 @@ SQL
 ---
 
 .. automodule:: odoo.upgrade.util.pg
-   :members: explode_execute,format_query,get_columns,ColumnList,PGRegexp
-
+   :members: 
 
 Misc
 ----
 
 .. automodule:: odoo.upgrade.util.misc
-.. autofunction:: expand_braces
-.. autofunction:: import_script
-.. autofunction:: version_gte
-.. autofunction:: version_between
-.. autofunction:: chunks
+   :members:
