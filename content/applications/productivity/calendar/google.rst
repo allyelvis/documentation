@@ -153,3 +153,45 @@ Now, Odoo Calendar is successfully synced with Google Calendar!
 
    Events can be created in Google Calendar without sending a notification by selecting
    :guilabel:`Don't Send` when prompted to send invitation emails.
+
+Troubleshoot sync
+=================
+
+There may be times when the Google calendar account does not sync correctly with Odoo. Sync issues
+can be seen in the database logs. In these cases, the account needs troubleshooting. A reset can be
+performed using the :guilabel:`Reset Account` button, which can be accessed by navigating to
+:menuselection:`Settings app --> Manage Users`. Then select the user to modify the calendar on, and
+click on the :guilabel:`Calendar` tab.
+
+.. image:: google/google-reset.png
+   :align: center
+   :alt: Reset buttons highlighted on the calendar tab of the user.
+
+Next, click :guilabel:`Reset Account` under the correct calendar.
+
+Reset options
+-------------
+
+The following reset options are available for troubleshooting Google calendar sync with Odoo:
+
+.. image:: google/reset-calendar.png
+   :align: center
+   :alt: Google calendar reset options in Odoo.
+
+:guilabel:`User's Existing Events`:
+
+ - :guilabel:`Leave them untouched`: no changes to the events.
+ - :guilabel:`Delete from the current Google Calendar account`: delete the events from Google
+   Calendar.
+ - :guilabel:`Delete from Odoo`: delete the events from the Odoo calendar.
+ - :guilabel:`Delete from both`: delete the events from both: Google Calendar and Odoo calendar.
+
+:guilabel:`Next Synchronization`:
+
+ - :guilabel:`Synchronize only new events`: sync new events on either/both: Google Calendar, Odoo
+   calendar.
+ - :guilabel:`Synchronize all existing events`: sync all events on either/both Google Calendar, Odoo
+   calendar.
+
+Click :guilabel:`Confirm` after making the selection about modifying the user's events and the
+calendar synchronization.
