@@ -9,6 +9,7 @@
 - Python dependencies listed in the file `requirements.txt`.
 - Make
 - A local copy of the [odoo/odoo repository](https://github.com/odoo/odoo) (optional)
+- A local copy of the [odoo/upgrade-util repository](https://github.com/odoo/upgrade-util) (optional)
 
 ### Instructions
 
