@@ -138,11 +138,18 @@ if odoo_dir_in_path:
     if not upgrade_util_dir:
         _logger.warning(
             "Could not find Upgrade Utils sources directory in `upgrade_util`.\n"
+            "The developer documentation will be built but autodoc directives will be skipped.\n"
             "In order to fully build the 'Developer' documentation, clone the repository with "
             "`git clone https://github.com/odoo/upgrade-util` or create a symbolic link."
         )
-    from odoo import upgrade
-    upgrade.__path__.append(str((upgrade_util_dir / 'src').resolve()))
+        odoo_dir_in_path = False
+    else:
+        _logger.info(
+            "Found Upgrade Util sources in %(directory)s",
+            {'directory': upgrade_util_dir.resolve()},
+        )
+        from odoo import upgrade
+        upgrade.__path__.append(str((upgrade_util_dir / 'src').resolve()))
 
 # Mapping between odoo models related to master data and the declaration of the
 # data. This is used to point users to available xml_ids when giving values for
