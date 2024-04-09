@@ -32,7 +32,7 @@ the custom repository. For this, add the following line inside the file::
 
    odoo_upgrade @ git+https://github.com/odoo/upgrade-util@master
 
-Using Upgrade utils
+Using upgrade utils
 ===================
 
 Once installed, the following packages are available for the upgrade scripts:
