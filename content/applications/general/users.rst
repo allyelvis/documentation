@@ -17,7 +17,15 @@ rules can be applied. Users and access rights can be added and changed at any po
 Add individual users
 ====================
 
+<<<<<<< HEAD
 Go to :menuselection:`Settings --> Manage Users` and click on *Create*.
+||||||| parent of c42a24279 (temp)
+To add new users, navigate to :menuselection:`Settings app --> Users section --> Manage Users`, and
+click on :guilabel:`Create`.
+=======
+To add new users, navigate to :menuselection:`Settings app --> Users section --> Manage Users`, and
+click on :guilabel:`New`.
+>>>>>>> c42a24279 (temp)
 
 .. image:: users/manage-users.png
    :height: 280
@@ -31,8 +39,28 @@ Go to :menuselection:`Settings --> Manage Users` and click on *Create*.
 .. image:: users/new_user.png
    :alt: View of a user’s form emphasizing the access rights tab in Odoo
 
+<<<<<<< HEAD
 When you are done editing the page and have *Saved* it, an invitation email is automatically sent to
 the user. The user must click on it to accept the invitation and create a login.
+||||||| parent of c42a24279 (temp)
+.. image:: users/new-user.png
+   :align: center
+   :alt: View of a user's form emphasizing the access rights tab in Odoo.
+
+After filling out all the necessary fields on the page, click :guilabel:`Save`. An invitation email
+is automatically sent to the user, using the email in the :guilabel:`Email Address` field. The user
+must click on the link included in the email to accept the invitation, and to create a database
+login.
+=======
+.. image:: users/new-user.png
+   :align: center
+   :alt: View of a user's form emphasizing the access rights tab in Odoo.
+
+After filling out all the necessary fields on the page, manually :guilabel:`Save`. An invitation
+email is automatically sent to the user, using the email in the :guilabel:`Email Address` field. The
+user must click on the link included in the email to accept the invitation, and to create a database
+login.
+>>>>>>> c42a24279 (temp)
 
 .. image:: users/invitation-email.png
    :alt: View of a user’s form with a notification that the invitation email has been sent in Odoo
@@ -42,7 +70,28 @@ the user. The user must click on it to accept the invitation and create a login.
    `pricing page <https://www.odoo.com/pricing>`_
    for more information.
 
+<<<<<<< HEAD
 With the :ref:`developer mode <developer-mode>` activated, *User Types* can be selected.
+||||||| parent of c42a24279 (temp)
+User type
+---------
+
+With the :ref:`developer mode <developer-mode>` activated, :guilabel:`User Type` can be selected
+from the :guilabel:`Access Rights` tab of the user form, accessible via :menuselection:`Settings app
+--> Users section --> Manage Users`.
+
+There are three types of users: :guilabel:`Internal User`, :guilabel:`Portal`, and
+:guilabel:`Public`.
+=======
+User type
+---------
+
+:guilabel:`User Type` can be selected from the :guilabel:`Access Rights` tab of the user form,
+accessible via :menuselection:`Settings app --> Users section --> Manage Users`.
+
+There are three types of users: :guilabel:`Internal User`, :guilabel:`Portal`, and
+:guilabel:`Public`.
+>>>>>>> c42a24279 (temp)
 
 .. image:: users/user-type.png
    :height: 300
@@ -130,8 +179,20 @@ can reaccess your database using your new password.
 Multi Companies
 ===============
 
+<<<<<<< HEAD
 The *Multi Companies* field allows you to set to which of the multiple companies database you hold
 the user can have access.
+||||||| parent of c42a24279 (temp)
+The :guilabel:`Multi Companies` field on a user form allows an administrator to provide access to
+multiple companies for existing users. To configure a multi-company environment for a user, navigate
+to the desired user by going to: :menuselection:`Settings app --> Users section --> Manage users`.
+Then, select the user to open their user form, and configure with multi-company access.
+=======
+The :guilabel:`Multi Companies` field on a user form allows an administrator to provide access to
+multiple companies for users. To configure a multi-company environment for a user, navigate to the
+desired user by going to: :menuselection:`Settings app --> Users section --> Manage users`. Then,
+select the user to open their user form, and configure with multi-company access.
+>>>>>>> c42a24279 (temp)
 
 .. note::
    Note that if not handled correctly, it may be the source of a lot of inconsistent multi-company
