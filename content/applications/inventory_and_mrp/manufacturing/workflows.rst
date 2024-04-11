@@ -8,6 +8,7 @@ Workflows
    :titlesonly:
 
    workflows/subcontracting
+   workflows/subcontracting_basic
    workflows/subcontracting_dropship
    workflows/use_mps
    workflows/work_center_time_off
